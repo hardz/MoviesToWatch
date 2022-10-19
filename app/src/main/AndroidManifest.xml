@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.freshlybakedandroid.moviestowatch">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:name=".MovieToWatchApp"
         android:allowBackup="true"

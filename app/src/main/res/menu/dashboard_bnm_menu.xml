@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/bnm_home_navi_selector"
+        android:title="@string/lable_home" />
+
+<!--    <item-->
+<!--        android:id="@+id/searchFragment"-->
+<!--        android:icon="@drawable/bnm_search_navi_selector"-->
+<!--        android:title="@string/lable_search" />-->
+
+    <item
+        android:id="@+id/favouritesFragment"
+        android:icon="@drawable/bnm_favorite_navi_selector"
+        android:title="@string/lable_favourites" />
+
+    <item
+        android:id="@+id/bookmarkFragment"
+        android:icon="@drawable/bnm_bookmark_navi_selector"
+        android:title="@string/lable_bookmark" />
+
+    <item
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/bnm_person_navi_selector"
+        android:title="@string/lable_profile" />
+
+</menu>

@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">MoviesToWatch</string>
+
+    <string name="lable_home">Home</string>
+    <string name="lable_search">Search</string>
+    <string name="lable_favourites">Favourites</string>
+    <string name="lable_bookmark">Bookmark</string>
+    <string name="lable_profile">Profile</string>
 </resources>
