@@ -47,6 +47,7 @@ dependencies {
 
     // Module dependencies
     implementation(project(":core-data"))
+    implementation(project(":core-model"))
 
     implementation 'androidx.fragment:fragment-ktx:1.5.3'
 

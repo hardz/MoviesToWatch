@@ -47,6 +47,9 @@ dependencies {
     implementation("com.squareup.moshi:moshi-kotlin:1.13.0")
     ksp("com.squareup.moshi:moshi-kotlin-codegen:1.13.0")
 
+    // Module dependencies
+    implementation(project(":core-model"))
+
     // Hilt dependencies
     implementation "com.google.dagger:hilt-android:2.42"
     kapt "com.google.dagger:hilt-android-compiler:2.42"
