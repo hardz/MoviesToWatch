@@ -12,8 +12,8 @@ import dagger.hilt.android.AndroidEntryPoint
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
-    lateinit var mBinding: ActivityMainBinding
-    lateinit var mNavController: NavController
+    private lateinit var mBinding: ActivityMainBinding
+    private lateinit var mNavController: NavController
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

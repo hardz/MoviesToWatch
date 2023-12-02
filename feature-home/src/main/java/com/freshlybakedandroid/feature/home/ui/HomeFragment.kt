@@ -24,7 +24,7 @@ import dagger.hilt.android.AndroidEntryPoint
 @AndroidEntryPoint
 class HomeFragment : Fragment() {
 
-    lateinit var mBinding : FragmentHomeBinding
+    private lateinit var mBinding : FragmentHomeBinding
     private val mDiscoverMovieViewModel: DiscoverMovieViewModel by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -40,12 +40,22 @@ class HomeFragment : Fragment() {
     }
 
     private fun initViews() {
+        Log.e("DEBUG", "initViews --->>")
         mDiscoverMovieViewModel.loadDiscoverMovieData(1)
         mDiscoverMovieViewModel.discoverMovieResponse.observe(viewLifecycleOwner, Observer<DiscoverMovieResponse?> {
             Log.e("DEBUG", "response in UI -- ${it.movieResults.get(0).title}")
 
-            it.movieResults
+//            it.movieResults
         })
-    }
 
+        mDiscoverMovieViewModel.loadTrendingMediaData("all", "day" )
+        mDiscoverMovieViewModel.trendingMediaResponse.observe(viewLifecycleOwner) {
+            Log.e("DEBUG", "Trending Media Data ${it.movieResults.get(0).title}")
+        }
+
+        mDiscoverMovieViewModel.loadSearchMovieData("john wick")
+        mDiscoverMovieViewModel.searchMovieResponse.observe(viewLifecycleOwner) {
+            Log.e("DEBUG", "Search Movie Data ${it.movieResults.get(0).title}")
+        }
+    }
 }
